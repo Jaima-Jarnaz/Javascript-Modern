@@ -122,3 +122,11 @@ Number is Even,Fulfilled
 
 ````
 >As you can see the last console executed before the promiseObj.then() .The reason is Promises are one of the ways to deal with asynchronous operations in javascript.Both first and last console are synchronous so they executed first,then the promise executed.
+#### Details
+
+>The function passed to new Promise is called the executor. When new Promise is created, the executor runs automatically. It contains the producing code which should eventually produce the result.
+
+>Its arguments resolve and reject are callbacks provided by JavaScript itself. Our code is only inside the executor.When the executor obtains the result, be it soon or late, doesn’t matter, it should call one of these callbacks:
+
+- resolve(value) — if the job is finished successfully, with result value.
+- reject(error) — if an error has occurred, error is the error object.
