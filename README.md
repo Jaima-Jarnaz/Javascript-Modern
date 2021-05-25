@@ -130,3 +130,29 @@ Number is Even,Fulfilled
 
 - resolve(value) — if the job is finished successfully, with result value.
 - reject(error) — if an error has occurred, error is the error object.
+ 
+#### then()
+>The then() method returns a Promise. It takes up to two arguments: callback functions for the success and failure cases of the Promise.
+
+### What is the difference between Callbacks and Promises?
+> The main difference between Callback Functions and Promises is that we attach a callback to a Promise rather than passing it. So we still use callback functions with Promises, but in a different way (chaining).Example:
+
+````
+//Callback
+
+const greetings=()=>{
+    console.log("Hello Everyone Ohayo Gojaimasu");
+}
+
+const higherorder=(callback)=>{  //callback
+    callback();
+}
+higherorder(greetings);
+
+//Now Promise
+
+promise0bj.then((res)=>{  
+    console.log(res);
+});
+````
+>Great resources that I found [freecodecamp](https://www.freecodecamp.org/news/javascript-es6-promises-for-beginners-resolve-reject-and-chaining-explained/),[MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_promises),[digitalocean](https://www.digitalocean.com/community/tutorials/understanding-javascript-promises),[FreeCodeCamp part-2]()
