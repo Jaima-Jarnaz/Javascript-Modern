@@ -1,7 +1,7 @@
 ## Javascript Advance Concept
 
 ### Synchronous Programming
-> Javascript is bydefault synchronous .JavaScript functions are executed in the sequence they are called. Example:
+> Javascript is bydefault synchronous . JavaScript functions are executed in the sequence they are called. Example:
   
   ```
  const taskOne=()=>{
@@ -59,4 +59,4 @@ Task Three done before task 2
 Task-2 data loading
 
 ````
->as this function needs more time to complete it's task so it'll go to queue stack and after finishing all callstack task this tasktwo will cometo in callstack and finish it's task.
+>As you can see, we're calling functions sequentially but function taskThree executed before taskTwo function.The reason is taskTwo function needs more time to complete it's task.Here taskThree will not wait for taskTwo to complete it's task.So taskTwo function will go to queue stack and wait there as we're using setTimeOut() which is working asynchronously,in the meanwhile taskThree will go to call stack and executed first, after that   tasktwo function will go to in callstack and finish it's task. That is Asynchronous concept.
