@@ -87,3 +87,5 @@ function processUserInput(callback) {
 
 processUserInput(greeting);
 ```
+### Promise
+> Promises are one of the ways to deal with asynchronous operations in javascript.JavaScript is single threaded, meaning that two bits of script cannot run at the same time; they have to run one after another. A Promise is an object that represents the eventual completion (or failure) of an asynchronous operation, and its resulting value.
