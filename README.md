@@ -155,4 +155,4 @@ promise0bj.then((res)=>{
     console.log(res);
 });
 ````
->Great resources that I found [freecodecamp](https://www.freecodecamp.org/news/javascript-es6-promises-for-beginners-resolve-reject-and-chaining-explained/),[MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_promises),[digitalocean](https://www.digitalocean.com/community/tutorials/understanding-javascript-promises),[FreeCodeCamp part-2]()
+> Great resources that I found [freecodecamp](https://www.freecodecamp.org/news/javascript-es6-promises-for-beginners-resolve-reject-and-chaining-explained/),[MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_promises),[digitalocean](https://www.digitalocean.com/community/tutorials/understanding-javascript-promises),[FreeCodeCamp_another_link](https://www.freecodecamp.org/news/javascript-promises-explained/)
