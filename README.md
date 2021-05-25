@@ -88,4 +88,37 @@ function processUserInput(callback) {
 processUserInput(greeting);
 ```
 ### Promise
-> Promises are one of the ways to deal with asynchronous operations in javascript.JavaScript is single threaded, meaning that two bits of script cannot run at the same time; they have to run one after another. A Promise is an object that represents the eventual completion (or failure) of an asynchronous operation, and its resulting value.
+> JavaScript is single threaded, meaning that two bits of script cannot run at the same time; they have to run one after another. A Promise is an object that represents the eventual completion (or failure) of an asynchronous operation, and its resulting value.First of all, a Promise is an object. 
+There are 3 states of the Promise object:
+- Pending: Initial State, before the Promise succeeds or fails
+- Resolved: Completed Promise
+- Rejected: Failed Promise
+Here is one example:
+
+````
+  console.log("Print this console first");
+
+let value1=20;
+const promise0bj=new Promise((resolve,reject)=>{
+        if(value1%2==0){
+            resolve("Number is Even,Fulfilled")
+        }
+        else{
+            reject("Sorry number is not even,Rejected")
+        }
+    }
+);
+
+promise0bj.then((res)=>{  
+    console.log(res);
+});
+console.log("Last console for printing statement");
+````
+**Output**
+````
+Print this console first
+Last console for printing statement
+Number is Even,Fulfilled
+
+````
+>As you can see the last console executed before the promiseObj.then() .The reason is Promises are one of the ways to deal with asynchronous operations in javascript.Both first and last console are synchronous so they executed first,then the promise executed.
